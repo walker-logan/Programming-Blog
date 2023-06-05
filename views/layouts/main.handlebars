@@ -14,7 +14,6 @@
     <header id="mainHeader">
       <h1 id='siteTitle'>DevSpeak</h1>
       <nav id="mainNav">
-        <!-- conditionally render login or logout links -->
         <div id="navContainer">
           <div id="navLinks">
             {{#if logged_in}}
@@ -28,7 +27,6 @@
       </nav>
     </header>
     <main id="mainContent">
-      <!-- rendering the sub layout -->
       {{{ body }}}
     </main>
     <footer id="mainFooter">
@@ -36,7 +34,6 @@
     </footer>
   </div>
 
-  <!-- rendering script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

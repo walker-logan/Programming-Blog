@@ -36,43 +36,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// get single post by id
-router.get("/posts/:id", async (req, res) => {
-  try {
-    const postData = await Post.findByPk(req.params.id, {
-      include: [
-        {
-          model: Comment,
-          attributes: [
-            "id",
-            "comment_content",
-            "post_id",
-            "user_id",
-            "created_at",
-          ],
-          include: [
-            {
-              model: User,
-              attributes: ["name"],
-            },
-          ],
-        },
-        {
-          model: User,
-          attributes: ["name"],
-        },
-      ],
-    });
-    const post = postData.get({ plain: true });
-    res.render("post", {
-      ...post,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 // get login page
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {

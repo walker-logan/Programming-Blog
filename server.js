@@ -1,10 +1,3 @@
-// Setup server.js file:
-// Import the necessary packages and files.
-// Setup the Express.js app and middleware.
-// Setup the session configuration.
-// Connect to the MySQL database using Sequelize.
-// Start the Express.js server.
-
 const express = require("express");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
