@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Diving into Python",
+    "post_content": "Python is a versatile language that's great for beginners and experts alike. Its readability and efficiency make it a top choice for a variety of applications, including web development, data analysis, AI, and more!",
+    "user_id": 1
+  },
+  {
+    "title": "Adventures in Machine Learning",
+    "post_content": "Machine learning is changing the world, one algorithm at a time. From recommendation systems to self-driving cars, ML applications are everywhere. In this post, we'll delve into the basics of machine learning, and how you can get started with it.",
+    "user_id": 2
+  },
+  {
+    "title": "Web Development: The Frontend Backstage",
+    "post_content": "HTML, CSS, and JavaScript - the holy trinity of web development. They work behind the scenes to create the web as we know it. Let's take a closer look at these technologies and the role they play in building the web.",
+    "user_id": 3
+  },
+  {
+    "title": "Database Systems: SQL vs NoSQL",
+    "post_content": "When it comes to choosing a database system, the battle often comes down to SQL vs NoSQL. Each has its own strengths and weaknesses, and the choice can significantly impact your application. Let's explore the differences and similarities between the two.",
+    "user_id": 4
+  },
+  {
+    "title": "The Future of Tech: AI and Beyond",
+    "post_content": "Artificial Intelligence is more than just a buzzword - it's a glimpse into the future of tech. In this post, we'll discuss the current state of AI, its potential impact on society, and where we're headed next.",
+    "user_id": 5
+  }
+]
