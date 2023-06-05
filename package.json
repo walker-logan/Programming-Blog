@@ -4,7 +4,10 @@
   "description": "1. Install and setup the required packages: express, express-handlebars, mysql2, sequelize, dotenv, bcrypt, express-session, connect-session-sequelize.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "express-handlebars": "^7.0.7",
     "express-session": "^1.17.3",
     "mysql2": "^3.3.3",
+    "nodemon": "^2.0.22",
     "sequelize": "^6.32.0"
   }
 }

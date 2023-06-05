@@ -31,3 +31,4 @@
 10. Validate that the app meets all acceptance criteria.
 
 11. Push the code to a GitHub repository with a unique name and a quality readme file.
+
