@@ -1,0 +1,14 @@
+{{#each this}}
+  <div class="commentItem">
+    <p class="commentUser">{{this.username}}</p>
+    <p class="commentContent">{{this.commentContent}}</p>
+    <p class="commentDate">{{this.createdAt}}</p>
+
+    {{#if logged_in}}
+      {{#if userIsAuthor}}
+        <button class="deleteCommentButton" data-comment-id="{{this.id}}">Delete
+          Comment</button>
+      {{/if}}
+    {{/if}}
+  </div>
+{{/each}}
