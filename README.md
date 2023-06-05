@@ -1,10 +1,3 @@
-4. Setup server.js file:
-    4.1. Import the necessary packages and files.
-    4.2. Setup the Express.js app and middleware.
-    4.3. Setup the session configuration.
-    4.4. Connect to the MySQL database using Sequelize.
-    4.5. Start the Express.js server.
-
 5. Define the Sequelize models (User, BlogPost, Comment) in the 'models' directory:
     5.1. Define the User model (username, password, etc.).
     5.2. Define the BlogPost model (title, content, etc.).
