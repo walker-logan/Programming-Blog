@@ -1,0 +1,28 @@
+<div id="editPost">
+  <form id="editPostForm">
+    <div class="inputGroup">
+      <label for="postTitle">Title: </label>
+      <input
+        type="text"
+        name="postTitle"
+        id="postTitle"
+        value="{{post.title}}"
+        required
+      />
+    </div>
+    <div class="inputGroup">
+      <label for="postContent">Content: </label>
+      <textarea
+        name="postContent"
+        id="postContent"
+        rows="10"
+        required
+      >{{post.content}}</textarea>
+    </div>
+    <div class="submitContainer">
+      <button id="updateBtn" type="submit">Update</button>
+    </div>
+  </form>
+</div>
+
+<script src="/js/editPost.js"></script>

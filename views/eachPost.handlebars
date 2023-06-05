@@ -1,0 +1,27 @@
+<div id="eachPost">
+  {{>postInfo post}}
+
+  {{#if logged_in}}
+  <div id="addComment">
+    <form id="commentForm">
+      <div>
+        <label for="comment-content">Add your comment: </label>
+        <textarea name="comment-content" id="commentContent" cols="30" rows="10" placeholder="Write your comment here..."></textarea>
+      </div>
+      <div>
+        <button class="pageBtn" type="submit">Add comment</button>
+      </div>
+    </form>
+  </div>
+  {{/if}}
+
+  {{>comments post.comments}}
+
+  <div id="returnToDash">
+    <a href="/dashboard">
+      <button class="pageBtn">Return to Dashboard</button>
+    </a>
+  </div>
+</div>
+
+<script src="/js/comment.js"></script>

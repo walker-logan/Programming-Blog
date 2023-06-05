@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSpeak</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="pageContainer">
+    <header id="mainHeader">
+      <h1 id='siteTitle'>DevSpeak</h1>
+      <nav id="mainNav">
+        <!-- conditionally render login or logout links -->
+        <div id="navContainer">
+          <div id="navLinks">
+            {{#if logged_in}}
+            <a href="" id="logoutBtn" class="navLink">Logout</a>
+            {{else}}
+            <a class="homeLink" href="/">Home</a>
+          </div>
+            <a class="loginLink" href="/login">Login</a>
+            {{/if}}
+        </div>
+      </nav>
+    </header>
+    <main id="mainContent">
+      <!-- rendering the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer id="mainFooter">
+      <p>&copy; 2021 Walker Logan</p>
+    </footer>
+  </div>
+
+  <!-- rendering script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
