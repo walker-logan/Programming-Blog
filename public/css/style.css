@@ -215,10 +215,10 @@ p {
 #dashboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: #252526;
   width: 100%;
-  max-width: 325px;
+  max-width: 800px;
   margin-top: 20px;
   padding: 20px;
   border: 1px solid #6b9955a3;
@@ -228,7 +228,7 @@ p {
 #userPostsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .userPost {
@@ -239,7 +239,7 @@ p {
   background-color: #1e1e1e;
   border: 1px solid #6b995561;
   width: 100%;
-  max-width: 350px;
+  max-width: 700px;
   padding: 15px;
   gap: 15px;
   border-radius: 2px;
@@ -247,6 +247,8 @@ p {
 }
 
 .postTitle {
+  display: flex;
+  justify-content: center;
   margin: 0;
   font-family: "Courier New", monospace;
   font-size: 1rem;
@@ -273,6 +275,7 @@ p {
 
 /* ----- BLOG PAGE ----- */
 
+#editPost,
 #eachPost {
   margin: 0;
   width: 100%;
@@ -286,10 +289,25 @@ p {
     monospace;
 }
 
+.postTitle {
+  display: flex;
+  margin-top: 20px;
+  font-family: "Courier New", monospace;
+  font-size: 1.5rem;
+  color: #9cdcfe;
+  text-decoration: none;
+}
+
+.postDate {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  color: #9cdcfe;
+}
+
 .postItem {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background-color: #252526;
   width: 100%;
   max-width: 800px;
@@ -297,7 +315,7 @@ p {
 }
 
 .postContent {
-  margin: 0;
+  margin-bottom: 20px;
   width: 100%;
   max-width: 800px;
   word-wrap: break-word;
@@ -311,9 +329,16 @@ p {
   color: #d4d4d4;
 }
 
+.eachPostBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 #commentForm {
   display: flex;
   flex-direction: row;
+  gap: 10px;
   align-items: center;
   background-color: #252526;
 }

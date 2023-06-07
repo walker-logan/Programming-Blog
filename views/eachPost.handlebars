@@ -8,14 +8,15 @@
 
   {{#if logged_in}}
 
+  <div class="eachPostBtns">
     <a href="/dashboard/edit/{{post.id}}">
       <button class="editPostBtn">Edit</button>
     </a>
-
     <a href="/dashboard">
       <button class="editPostBtn" id="deleteBtn">Delete</button>
     </a>
-    
+  </div>
+
     {{/if}}
   
   {{#if logged_in}}
@@ -24,10 +25,9 @@
       <div id="commentForm">
         <label for="comment-content">Add your comment: </label>
         <textarea name="comment-content" id="commentContent" cols="30" rows="1" placeholder="Write your comment here..."></textarea>
-      </div>
-      <div>
         <button class="editPostBtn" type="submit">Submit</button>
       </div>
+     
     </form>
   </div>
     
