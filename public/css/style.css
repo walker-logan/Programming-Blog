@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+/* ----- HOMEPAGE ----- */
+
+#homepageTitle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  padding: 20px;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 2rem;
+  color: #9cdcfe;
+}
+
+#homepageInspo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 1rem;
+  color: #9cdcfe;
+}
+
+/* ----- MAIN STYLES ----- */
+
+#mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px;
+  background-color: #252526;
+  color: #9cdcfe;
+  border-bottom: 1px solid #6b995560;
+}
+
+#siteTitle {
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+#mainNav {
+  display: flex;
+  margin-right: 10px;
+}
+
+#navContainer {
+  display: flex;
+}
+
+.navLink,
+.homeLink,
+.loginLink {
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  color: #9cdcfe;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.navLink:hover,
+.homeLink:hover,
+.loginLink:hover {
+  color: #ffffff;
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 1rem;
+  color: #9cdcfe;
+}
+
+#mainFooter {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #252526;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  color: #9cdcfe;
+  border-top: 1px solid #6a9955;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #6a9955;
+}
+
+a:hover {
+  color: #9cdcfe;
+}
+
+p {
+  color: whitesmoke;
+}
+
+/* ----- LOGIN/SIGNUP/DASHBOARD ----- */
+
+#loginSection,
+#signupSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px 10px;
+}
+
+.boxTitle {
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 2rem;
+  color: #9cdcfe;
+  margin: 20px;
+  padding: 10px;
+}
+
+.passwordLabel,
+.emailLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  color: #9cdcfe;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Courier New", monospace;
+}
+
+.inputGroup {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.loginBox {
+  margin: 0;
+  width: 100%;
+  max-width: 325px;
+  background-color: #1e1e1e;
+  border: 1px solid #6b9955a3;
+  border-radius: 2px;
+  color: #9cdcfe;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+
+.loginBox::placeholder {
+  color: #9cdcfe3f;
+}
+
+.loginBox:focus {
+  outline-color: #6a9955;
+  background: #252526;
+  color: #9cdcfe;
+}
+
+.pageBtn {
+  margin: 15px 0;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 1rem;
+  background: #6b9955d0;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+.pageBtn:hover {
+  background: #82b7d4;
+  color: #1e1e1e;
+}
+
+.inputGroup p {
+  color: #d4d4d4;
+  text-align: center;
+}
+
+/* ----- DASHBOARD W/ POST TITLES ----- */
+
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #252526;
+  width: 100%;
+  max-width: 325px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #6b9955a3;
+  border-radius: 2px;
+}
+
+#userPostsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 1px solid #6b995561;
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.postTitle {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.editPostBtn {
+  margin: 0;
+  width: 100%;
+  max-width: 50px;
+  text-align: center;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 0.75rem;
+  background: #6b9955d0;
+  color: #1e1e1e;
+  padding: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+/* ----- BLOG PAGE ----- */
+
+#eachPost {
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #252526;
+  padding: 20px;
+  color: #d4d4d4;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+}
+
+.postItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #252526;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 2px;
+}
+
+.postContent {
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #252526;
+  font-family: "Roboto Mono", "Monaco", "Droid Sans Mono", "Courier New",
+    monospace;
+  font-size: 1rem;
+  color: #d4d4d4;
+}
+
+#commentForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #252526;
+}
+
+#commentContent {
+  margin: 10px 0;
+  padding: 10px;
+  color: #9cdcfe;
+  background: #1e1e1e;
+  border: 1px solid #6b9955;
+}
+
+#commentContent::placeholder {
+  color: #9cdcfe3f;
+}
+
+#commentContent:focus {
+  outline-color: #6a9955;
+  background: #252526;
+  color: #9cdcfe;
+}
+
+#returnToDash {
+  margin-top: 20px;
+}
+
+.deleteCommentButton {
+  background: #6a9955;
+  color: #1e1e1e;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.deleteCommentButton:hover {
+  background: #9cdcfe;
+  color: #1e1e1e;
+}

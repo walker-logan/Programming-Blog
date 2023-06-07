@@ -2,9 +2,9 @@
   <h1 class="boxTitle">Signup</h1>
   <form id="signupForm" class="formBox">
     <div class="inputGroup">
-      <label for="nameSignup">Name: </label>
+      <label class="emailLabel" for="nameSignup">Name: </label>
       <input
-        class="loginBox formInput borderRad paddingLR font2"
+        class="loginBox"
         type="text"
         id="nameSignup"
         name="nameSignup"
@@ -12,9 +12,9 @@
       />
     </div>
     <div class="inputGroup">
-      <label for="emailSignup">Email: </label>
+      <label class="emailLabel" for="emailSignup">Email: </label>
       <input
-        class="loginBox formInput borderRad paddingLR font2"
+        class="loginBox"
         type="text"
         id="emailSignup"
         name="emailSignup"
@@ -22,21 +22,20 @@
       />
     </div>
     <div class="inputGroup">
-      <label for="passwordSignup">Password: </label>
+      <label class="passwordLabel" for="passwordSignup">Password: </label>
       <input
-        class="loginBox formInput borderRad paddingLR font2"
+        class="loginBox"
         type="password"
         id="passwordSignup"
         name="passwordSignup"
         placeholder="YourPassword"
       />
     </div>
-    <div class="inputGroup">
-      <button class="pageBtn borderRad" type="submit">Signup</button>
-    </div>
-    <div class="inputGroup">
-      <p>Already have an account? <a href="/login">Click here to Login</a></p>
-    </div>
+
+    <button class="pageBtn borderRad" type="submit">Signup</button>
+
+    <p>Already have an account? <a href="/login">Click here to Login</a></p>
+
   </form>
 </div>
 
