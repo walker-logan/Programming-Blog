@@ -1,15 +1,8 @@
 <div class="postItem">
-  <h2 class="postTitle">{{postTitle}}</h2>
+  <h2 class="postTitle">{{title}}</h2>
   <p class="postDate">{{createdAt}}</p>
   <p class="postAuthor">{{authorName}}</p>
-  <p class="postContent">{{post.content}}</p>
+  <p class="postContent">{{post_content}}</p>
 
-  {{#if logged_in}}
-    {{#if userIsAuthor}}
-      <button class="editPostButton" data-post-id="{{id}}">Edit Post</button>
-      <button class="deletePostButton" data-post-id="{{id}}">Delete Post</button>
-    {{/if}}
-  {{/if}}
-
-  <a class="readMoreLink" href="/post/{{id}}">Read More</a>
+  
 </div>

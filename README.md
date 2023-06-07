@@ -1,27 +1,40 @@
-5. Define the Sequelize models (User, BlogPost, Comment) in the 'models' directory:
-    5.1. Define the User model (username, password, etc.).
-    5.2. Define the BlogPost model (title, content, etc.).
-    5.3. Define the Comment model (content, etc.).
-    5.4. Define the relationships between the models.
+# Programming-Blog
 
-6. Setup the Handlebars.js templates in the 'views' directory:
-    6.1. Create a main layout with common elements (header, footer, etc.).
-    6.2. Create a homepage template.
-    6.3. Create a dashboard template.
-    6.4. Create a login/signup template.
-    6.5. Create a blog post template.
+## Table of Contents
 
-7. Setup the Express.js routes in the 'controllers' directory:
-    7.1. Setup routes for serving the Handlebars.js templates.
-    7.2. Setup API routes for Users (signup, login, logout, etc.).
-    7.3. Setup API routes for BlogPosts (create, read, update, delete).
-    7.4. Setup API routes for Comments (create, read, update, delete).
+- [Description](#project-description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Testing](#testing)
+- [Questions](#questions)
 
-8. Create client-side JS files in the 'public' directory for handling form submissions, button clicks, etc.
+## Project Description
 
-9. Deploy the app to Heroku.
+This is a blog site that users can publish their blog posts and comment on others' as well.
 
-10. Validate that the app meets all acceptance criteria.
+### Licensing
 
-11. Push the code to a GitHub repository with a unique name and a quality readme file.
+MIT
 
+[![Generic badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/.)
+
+## Installation
+
+Copy the SSH key in this repo and paste git clone <ssh key> in your terminal. Run npm i and create a .env file with your MySQL info.
+
+## Usage
+
+Signup and enjoy!
+
+## Contribution
+
+Always down for contribution. Hit me up anywhere.
+
+## Testing
+
+No tests right now.
+
+## Questions
+
+Reach out to the repo owner, [walker-logan](https://github.com/walker-logan) at walker.logan44@gmail.com.

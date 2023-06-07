@@ -13,6 +13,10 @@
       </div>
     </form>
   </div>
+  {{#if logged_in}}
+    <a href="/dashboard/edit/{{post.id}}"class="editPostButton" data-post-id="{{post.id}}">Edit Post</>
+    <button class="deletePostButton" data-post-id="{{post.id}}">Delete Post</button>
+  {{/if}}
   {{/if}}
 
   {{>comments post.comments}}
